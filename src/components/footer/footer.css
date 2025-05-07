@@ -1,0 +1,46 @@
+footer {
+  width: 100%;
+  padding: 1rem;
+
+  background-color: #333;
+  color: #fff;
+
+  position: fixed;
+  bottom: 0;
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.socials {
+  width: 30%;
+  min-width: 136px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.socials a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.socials a:active {
+  transform: scale(0.9);
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

@@ -1,0 +1,95 @@
+.services {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(320px, auto);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services img {
+  max-width: 100%;
+  height: 100%;
+
+  align-self: start;
+
+  border-radius: 10px;
+
+  object-fit: contain;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+#rotating-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 1s ease-in;
+}
+
+.services-features-container {
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0 10px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: max-height 0.3s ease;
+}
+
+.services-features-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.service-divider {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #55565A;
+
+  opacity: 0.5;
+}
+
+.services-list-mark {
+  width: 3rem;
+  height: 3rem;
+
+  margin-right: 1rem;
+
+  background-image: url('../../assets/images/mark-services.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.services-btn {
+  width: 90%;
+  padding: 0.7rem 1.5rem;
+
+  margin: 0 auto;
+
+  font-size: 1.2rem;
+  color: #ffffff;
+
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.services-btn:hover {
+  background-color: #0056b3;
+}
+
+.services-btn:active {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  background-color: #0056b3;
+}

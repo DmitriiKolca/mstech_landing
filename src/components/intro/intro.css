@@ -1,0 +1,129 @@
+.intro {
+  width: 100%;
+  height: auto;
+
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-content {
+  flex: 1;
+  min-width: 320px;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-content h1 {
+  font-family: 'Prata', serif;
+  font-weight: normal;
+
+  font-size: 3rem;
+  transition: font-size 0.3s ease-in-out;
+
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  margin-bottom: 1rem;
+
+  font-size: 1.8rem;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.highlight {
+  font-family: 'Prata', serif;
+  font-weight: normal;
+  color: #007BFF;
+  margin-left: 0.5rem;
+}
+
+.list-mark {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  margin-right: 1rem;
+
+  background-image: url('../../assets/images/mark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.cta-button:active {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  background-color: #0056b3;
+}
+
+.intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  min-width: 320px;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro-image img {
+  margin-top: -112px;
+
+  z-index: 100;
+
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+@media (max-width: 1060px) {
+  .intro-image img {
+    margin-top: 0;
+  }
+
+  .intro-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .features-list li {
+    font-size: 1.5rem;
+  }
+
+  .highlight {
+    font-size: 1.3rem;
+  }
+}
